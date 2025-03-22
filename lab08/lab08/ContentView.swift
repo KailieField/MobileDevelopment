@@ -16,7 +16,7 @@ struct ContentView: View {
                     
                 }) {
                     
-                    Text(route ? "Clear Route" : "Show Route")
+                    Text(route ? "Clear" : "Map Route")
                         .padding()
                         .background(Color.blue)
                         .foregroundColor(.white)
