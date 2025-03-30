@@ -13,6 +13,7 @@ class ProductViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "Products"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addProductTapped))
+        navigationItem.leftBarButtonItem = self.editButtonItem
         
     }
     
