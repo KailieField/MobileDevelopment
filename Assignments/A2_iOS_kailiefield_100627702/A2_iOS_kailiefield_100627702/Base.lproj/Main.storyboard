@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="481.67938931297709" y="-848.59154929577471"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Product View Controller-->
         <scene sceneID="iER-JW-on3">
             <objects>
-                <viewController id="1yN-TI-Hrq" sceneMemberID="viewController">
+                <viewController id="1yN-TI-Hrq" customClass="AddProductViewController" customModule="A2_iOS_kailiefield_100627702" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4W6-xf-58w">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
