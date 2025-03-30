@@ -1,23 +1,38 @@
 
 import UIKit
+import CoreData
 
 class ProductDetailViewController: UIViewController {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var providerLabel: UILabel!
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadFirstProduct()
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadFirstProduct() {
+        let request: NSFetchRequest<Product> = Product.fetchRequest()
+        request.fetchLimit = 1
+        
+        do {
+            let results = try context.fetch(request)
+            if let product = results.first {
+                nameLabel.text = product.name
+                descriptionLabel.text = product.description
+                priceLabel.text = "$\(product.price)"
+                providerLabel.text = product.provider
+            } else {
+                nameLabel.text = "No product found"
+            }
+        } catch {
+            print("Error: \(error)")
+        }
     }
-    */
-
 }
