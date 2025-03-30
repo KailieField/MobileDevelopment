@@ -1,7 +1,7 @@
 import UIKit
 import CoreData
 
-class ProductViewController: UITableViewController {
+class ProductViewController: UITableViewController, UISearchResultsUpdating {
     
 //    var products = ["Milk", "Cheese", "Bread", "Eggs", "Apples", "Bananas", "Oranges", "Potatoes", "Onions", "Tomatoes"]
     
