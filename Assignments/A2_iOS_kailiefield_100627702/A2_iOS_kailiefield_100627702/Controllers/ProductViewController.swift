@@ -1,38 +1,32 @@
 import UIKit
 
 class ProductViewController: UITableViewController {
+    
+    var dummyProducts = ["Milk", "Cheese", "Bread", "Eggs", "Apples", "Bananas", "Oranges", "Potatoes", "Onions", "Tomatoes"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.title = "Products"
+        
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int)-> Int {
+        return dummyProducts.count
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        
+        cell.textLabel?.text = dummyProducts[indexPath.row]
+        cell.detailTextLabel?.text="Description"
+        
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -78,5 +72,5 @@ class ProductViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+//-------------------------------------------------------------------------------------------------------------------------------------
 }
