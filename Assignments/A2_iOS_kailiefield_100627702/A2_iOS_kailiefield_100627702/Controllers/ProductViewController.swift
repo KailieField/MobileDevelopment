@@ -8,6 +8,15 @@ class ProductViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "Products"
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addProductTapped))
+        
+    }
+    
+    @objc func addProductTapped() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let addVC = storyboard.instantiateViewController(withIdentifier: "AddProductVC") as! AddProductViewController
+        navigationController?.pushViewController(addVC, animated: true)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
