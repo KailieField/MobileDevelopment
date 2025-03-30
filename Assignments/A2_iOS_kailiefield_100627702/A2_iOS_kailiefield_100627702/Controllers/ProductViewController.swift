@@ -26,6 +26,10 @@ class ProductViewController: UITableViewController {
         
         return cell
     }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
 
 
     /*
