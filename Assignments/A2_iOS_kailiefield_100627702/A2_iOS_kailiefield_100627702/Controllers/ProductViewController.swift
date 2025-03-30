@@ -11,9 +11,12 @@ class ProductViewController: UITableViewController, UISearchResultsUpdating {
     
     var isFiltering: Bool {
         return searchController.isActive && !(searchController.searchBar.text?.isEmpty ?? true)
-    }
+        
 
+        
+    }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Products"
@@ -37,6 +40,9 @@ class ProductViewController: UITableViewController, UISearchResultsUpdating {
         fetchProducts()
     }
     
+    @IBAction func backButton(_ sender: UIBarButtonItem){
+        navigationController?.popViewController(animated: true)
+    }
     // -- [ CORE DATA FETCH ] --
     func fetchProducts() {
         let request: NSFetchRequest<Product> = Product.fetchRequest()

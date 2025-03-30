@@ -98,7 +98,15 @@
                             <outlet property="delegate" destination="EhG-L6-kE2" id="tI5-qZ-uLE"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="&lt; Back" id="MIP-t5-2Jk">
+                            <connections>
+                                <action selector="backButton:" destination="EhG-L6-kE2" id="lF2-m6-YiD"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="Yvj-4y-Q13"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8V-Vf-eei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
