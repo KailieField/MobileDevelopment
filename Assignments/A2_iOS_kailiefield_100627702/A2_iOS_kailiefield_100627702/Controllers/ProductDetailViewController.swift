@@ -10,6 +10,8 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var providerLabel: UILabel!
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var product: Product?
 
     override func viewDidLoad() {
         super.viewDidLoad()
