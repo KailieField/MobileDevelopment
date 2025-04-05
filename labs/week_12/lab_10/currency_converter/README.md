@@ -1,14 +1,25 @@
-#Exercise: Flutter Currency Converter (USD ↔ CAD)
-##Objective:
+# Exercise: Flutter Currency Converter (USD ↔ CAD)
+
+## Objective:
+
 ###Create a Flutter application with two screens that allows users to convert between USD and CAD.
-##Requirements:
+
+## Requirements:
+
 ###1. Screen 1: Currency Input Screen
+
 ####o Two text fields: one for USD and one for CAD.
+
 ####o When the user enters a value in one field, the other should upda
+
 ####  automatically based on the exchange rate.
+
 ####o A button to navigate to Screen 2.
+
 ###2. Screen 2: Conversion Summary Screen
+
 ####o Displays the converted values.
+
 ####o Shows the exchange rate used.
 ####o A button to return to Screen 1.
 ###3. Additional Features:
