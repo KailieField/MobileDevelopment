@@ -31,12 +31,12 @@ values).
 - Use MaterialPageRoute for navigation.
 - Optionally, fetch the exchange rate from an API using http package.
 
-##Submission:
+## Submission:
 
 - Provide the GitHub repository link
 - Create a zip file of the folder containing your project
 
-##Deductions:
+## Deductions:
 - Late submissions: -20%
 - No submission accepted after 2 calendar days.
 - Did not follow the provided instruction for submission = -20%
