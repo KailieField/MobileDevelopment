@@ -1,0 +1,13 @@
+# ---- Xcode ----
+
+DerivedData/
+*.xcworkspace
+*.xcurserstate
+*.xcurserdata
+*.DS_Store
+
+.build/
+.swiftpm/
+Pods/
+Carthage/
+ 
